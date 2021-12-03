@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     {% load static %}
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>Neuron HTML CSS Template</title>
+<!--
+
+Template 2085 Neuron
+
+http://www.tooplate.com/view/2085-neuron
+
+-->
+<link rel="stylesheet" href='{% static "css/bootstrap.min.css" %}'>
+<link rel="stylesheet" href='{% static "css/font-awesome.min.css" %}'>
+
+<!-- Main css -->
+<link rel="stylesheet" href='{% static "css/style.css" %}'>
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather:300,400" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- PRE LOADER -->
+
+<div class="preloader">
+     <div class="sk-spinner sk-spinner-wordpress">
+          <span class="sk-inner-circle"></span>
+     </div>
+</div>
+
+<!-- Navigation section  -->
+
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+     <div class="container">
+
+          <div class="navbar-header">
+               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+               </button>
+               <a href="index.html" class="navbar-brand">Poetry Undiluted</a>
+          </div>
+          <div class="collapse navbar-collapse">
+               <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <!-- <li><a href="gallery.html">Gallery</a></li> -->
+                    <li><a href="">Contact</a></li>
+               </ul>
+          </div>
+
+  </div>
+</div>
+
+<!-- Home Section -->
+
+<section id="home" class="main-home parallax-section">
+     <div class="overlay"></div>
+     <div id="particles-js"></div>
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-12 col-sm-12">
+                    <h1>Deliver Us From Evil.</h1>
+                    <h4>Poems written by Dr Jokotola Prisca Temiloluwa</h4>
+                    <a href="#blog" class="smoothScroll btn btn-default">Discover More</a>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+<!-- Blog Section -->
+
+<section id="blog">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-offset-1 col-md-10 col-sm-12">
+                    
+                    <div class="blog-post-thumb">
+                         
+                         <div class="blog-post-image">
+                              <a href="single-post.html">
+                                   <!-- <img src='{% static "images/blog-image1.jpg" class="img-responsive" alt="Blog Image %}'> -->
+                              </a>
+                         </div>
+                         <div class="blog-post-title">
+                              
+                              <h3><a href="single_post.html"> {{all_posts.title}} </a></h3>
+                         </div>
+                         <div class="blog-post-format">
+                              <span><a href="#"><img src='{% static "images/author-image1.jpg" class="img-responsive img-circle" %}'> Jokotola Prisca</a></span>
+                              <span><i class="fa fa-date"></i> {{all_posts.date_created}}</span>
+                              <!-- <span><a href="#"><i class="fa fa-comment-o"></i> 35 Comments</a></span> -->
+                         </div>
+                         <div class="blog-post-des">
+                              <p style = 'text-align: justify;' > {{all_posts.body }} </p>
+                              <a href="/" class="btn btn-default">Back to Home</a>
+                              
+                         </div>
+                       
+                    </div>
+
+                    
+                         </div>
+                    </div>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+<!-- Footer Section -->
+
+<footer>
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-5 col-md-offset-1 col-sm-6">
+                    <h3>Deliver us From Evil</h3>
+                    <p> All rights reserved. By payment of the required fees, you have been granted the non-exclusive, non-transferable right to access and read the text of this book on. No part of this text may be reproduced, downloaded, decompiled, reverse engineered, stored in a retrieval system, or transmitted in any form or by any means—electronic, mechanical, photocopy, recording, or any other, now known or hereafter invented, without the express written permission of the author.
+                         <br> Requests for more information should be addressed to jokotolaprisca@gmail.com </p>
+                    <div class="footer-copyright">
+                         <p>Copyright &copy; 2020 by JOKOTOLA Priscilla</p>
+                    </div>
+               </div>
+
+               <div class="col-md-4 col-md-offset-1 col-sm-6">
+                    <h3>Contact us</h3>
+                    <p><i class="fa fa-globe"></i> Osogbo, Nigeria</p>
+                    <p><i class="fa fa-phone"></i> 09030843603</p>
+                    <p><i class="fa fa-save"></i> jokotolaprisca@gmail.com</p>
+               </div>
+
+               <div class="clearfix col-md-12 col-sm-12">
+                    <hr>
+               </div>
+
+               <div class="col-md-12 col-sm-12">
+                    <ul class="social-icon">
+                         <li><a href="#" class="fa fa-facebook"></a></li>
+                         <li><a href="#" class="fa fa-twitter"></a></li>
+                         <li><a href="#" class="fa fa-google-plus"></a></li>
+                         <li><a href="#" class="fa fa-dribbble"></a></li>
+                         <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+               </div>
+               
+          </div>
+     </div>
+</footer>
+
+<!-- Back top -->
+<a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+<!-- SCRIPTS -->
+
+<script src='{% static "js/jquery.js" %}'></script>
+<script src='{% static "js/bootstrap.min.js" %}'></script>
+<script src='{% static "js/particles.min.js" %}'></script>
+<script src='{% static "js/app.js" %}'></script>
+<script src='{% static "js/jquery.parallax.js" %}'></script>
+<script src='{% static "js/smoothscroll.js" %}'></script>
+<script src='{% static "js/custom.js" %}'></script>
+
+</body>
+</html>
